@@ -36,7 +36,7 @@
 # Copyright 2013 Your name here, unless otherwise noted.
 #
 class files (
-  $file,
+  $file   = '/mnt/backup',
   $ensure = present,
   $owner = root,
   $group = root,
@@ -46,6 +46,6 @@ file $file {
   ensure => $ensure,
   owner  => $owner, 
   group  => $group,
+  }
 }
-
 
